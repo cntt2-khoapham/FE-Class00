@@ -1,12 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="">
-</head>
-<body>
-  hello
-</body>
-</html>
+package bai1;
+public class hocsinh
+{
+	private String ten;
+	private int tuoi;
+	
+ public hocsinh(){
+	
+ }
+ public hocsinh(String ten, int tuoi){
+	 this.ten=ten;
+	 this.tuoi=tuoi;
+ }
+ 
+
+	public void setten(String ten){
+		this.ten=ten;
+	}
+	public String getten(){
+		return ten;
+	}
+	public void settuoi(int tuoi){
+		this.tuoi=tuoi;
+	}
+	public int gettuoi(){
+		return tuoi;
+	}
+	@Override
+	public String toString() {
+		return "hocsinh [ten=" + ten + ", tuoi=" + tuoi + "]";
+	}
+}
